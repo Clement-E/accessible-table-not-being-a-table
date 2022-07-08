@@ -1,5 +1,6 @@
 <div
   id="LA-GRILLE"
+  class="la-grille"
   role="grid"
   aria-labelledby="LE-LABEL-KI-VA-BIEN"
   aria-rowcount="3"
@@ -7,62 +8,211 @@
   data-wrap-cols="true"
 >
   <div role="row" class="row-table row-table-header">
-    <span tabindex="-1" aria-colindex="1" role="columnheader">Organisme</span>
-    <span tabindex="-1" aria-colindex="2" role="columnheader">Poste</span>
-    <span tabindex="-1" aria-colindex="3" role="columnheader"
+    <span
+      tabindex="-1"
+      aria-colindex="1"
+      role="columnheader"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Organisme</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="2"
+      role="columnheader"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Poste</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="3"
+      role="columnheader"
+      [ngStyle]="{'flex-basis':'100px'}"
       >Heures affectées</span
     >
-    <span tabindex="-1" aria-colindex="4" role="columnheader"
+    <span
+      tabindex="-1"
+      aria-colindex="4"
+      role="columnheader"
+      [ngStyle]="{'flex-basis':'100px'}"
       >Heures effectuées</span
     >
-    <span tabindex="-1" aria-colindex="5" role="columnheader"
-      >Dateee de début/fin de travail</span
+    <span
+      tabindex="-1"
+      aria-colindex="5"
+      role="columnheader"
+      [ngStyle]="{'flex-basis':'140px'}"
+      >Date de début/ fin de travail</span
     >
-    <span tabindex="-1" aria-colindex="6" role="columnheader">Etat</span>
-    <span tabindex="-1" aria-colindex="7" role="columnheader"></span>
+    <span
+      tabindex="-1"
+      aria-colindex="6"
+      role="columnheader"
+      [ngStyle]="{'flex-basis':'150px'}"
+      >Etat</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="7"
+      role="columnheader"
+      [ngStyle]="{'flex-basis':'150px'}"
+    ></span>
   </div>
   <div role="row" class="row-table row-table-impair">
-    <span tabindex="-1" aria-colindex="1" role="gridcell">Donnée 1</span>
-    <span tabindex="-1" aria-colindex="2" role="gridcell">Donnée 2</span>
-    <span tabindex="-1" aria-colindex="3" role="gridcell">50h</span>
-    <span tabindex="-1" aria-colindex="4" role="gridcell">22h</span>
-    <span tabindex="-1" aria-colindex="5" role="gridcell"
+    <span
+      tabindex="-1"
+      aria-colindex="1"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Donnée 1</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="2"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Donnée 2</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="3"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'100px'}"
+      >50h</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="4"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'100px'}"
+      >22h</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="5"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'140px'}"
       >01/01/2020 - 01/01/2025</span
     >
-    <div tabindex="-1" aria-colindex="6" role="gridcell">
+    <div
+      tabindex="-1"
+      aria-colindex="6"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'150px'}"
+    >
       <app-badge [libelle]="'Terminé'"></app-badge>
     </div>
-    <div tabindex="-1" aria-colindex="7" role="gridcell">
+    <div
+      tabindex="-1"
+      aria-colindex="7"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'150px'}"
+    >
       <app-lien [libelle]></app-lien>
     </div>
   </div>
   <div role="row" class="row-table row-table-pair">
-    <span tabindex="-1" aria-colindex="1" role="gridcell">Donnée 1</span>
-    <span tabindex="-1" aria-colindex="2" role="gridcell">Donnée 2</span>
-    <span tabindex="-1" aria-colindex="3" role="gridcell">50h</span>
-    <span tabindex="-1" aria-colindex="4" role="gridcell">22h</span>
-    <span tabindex="-1" aria-colindex="5" role="gridcell"
+    <span
+      tabindex="-1"
+      aria-colindex="1"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Donnée 1</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="2"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Donnée 2</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="3"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'100px'}"
+      >50h</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="4"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'100px'}"
+      >22h</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="5"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'140px'}"
       >01/01/2020 - 01/01/2025</span
     >
-    <div tabindex="-1" aria-colindex="6" role="gridcell">
+    <div
+      tabindex="-1"
+      aria-colindex="6"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'150px'}"
+    >
       <app-badge [libelle]="'Terminé'"></app-badge>
     </div>
-    <div tabindex="-1" aria-colindex="7" role="gridcell">
+    <div
+      tabindex="-1"
+      aria-colindex="7"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'150px'}"
+    >
       <app-lien [libelle]></app-lien>
     </div>
   </div>
   <div role="row" class="row-table row-table-impair">
-    <span tabindex="-1" aria-colindex="1" role="gridcell">Donnée 1</span>
-    <span tabindex="-1" aria-colindex="2" role="gridcell">Donnée 2</span>
-    <span tabindex="-1" aria-colindex="3" role="gridcell">50h</span>
-    <span tabindex="-1" aria-colindex="4" role="gridcell">22h</span>
-    <span tabindex="-1" aria-colindex="5" role="gridcell"
+    <span
+      tabindex="-1"
+      aria-colindex="1"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Donnée 1</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="2"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'200px'}"
+      >Donnée 2</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="3"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'100px'}"
+      >50h</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="4"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'100px'}"
+      >22h</span
+    >
+    <span
+      tabindex="-1"
+      aria-colindex="5"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'140px'}"
       >01/01/2020 - 01/01/2025</span
     >
-    <div tabindex="-1" aria-colindex="6" role="gridcell">
+    <div
+      tabindex="-1"
+      aria-colindex="6"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'150px'}"
+    >
       <app-badge [libelle]="'Terminé'"></app-badge>
     </div>
-    <div tabindex="-1" aria-colindex="7" role="gridcell">
+    <div
+      tabindex="-1"
+      aria-colindex="7"
+      role="gridcell"
+      [ngStyle]="{'flex-basis':'150px'}"
+    >
       <app-lien [libelle]></app-lien>
     </div>
   </div>

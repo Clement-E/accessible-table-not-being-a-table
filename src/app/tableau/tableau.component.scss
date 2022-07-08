@@ -5,10 +5,33 @@
   outline-width: 3px;
 }
 
-#LA-GRILLE {background-color: burlywood;}
+.la-grille {background-color: white;}
 
 .row-table {
   display: flex;
   flex-wrap: nowrap;
   flex: 1 1 auto;
+  height: 70px;
+}
+
+.row-table-header {
+  font-weight: 700;
+  line-height: 1.4;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid black;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+[role="gridcell"],[role="columnheader"] {
+  padding: 16px 8px 8px 8px ;
+  display: inline-block;
+  text-align: left;
+}
+
+.row-table-pair {
+  background-color: #F6F6F6;
+}
+.row-table-impair {
+  background-color: #EEEEEE;
 }
